@@ -11,20 +11,22 @@
 <body>
     <h1>Dropdown Menu</h1>
     <article>
+ 
         <div>
-            <select id="menu">
-                
+            <select name ="dima "id="menu">
+                <option value="none" hidden>Заполните форму</option>
             </select>
         </div>
-        <label for="newItemText">
-            Text:
-        </label>
+        
+        <label  for="newItemText">Text:</label>
         <input type="text" id="newItemText" />
-        <label for="newItemValue">
-            Value:
-        </label>
+        
+        <label for="newItemValue">Value:</label>
         <input type="text" id="newItemValue" />
+        
         <input type="button" value="Add" onclick="addItem()">
+<!--        <input type="button" value="Delete" onclick="deleteItem()">-->
+
     </article>
 </body>
 
