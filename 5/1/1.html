@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Введение в Media Queries</title>
+    <style>
+        @media (min-width: 600px) {
+            .mq-width:after {
+                content: "Viewport width is larger than 600px";
+                color: green;
+            }
+        }
+        @media (min-height: 600px) {
+            .mq-height:after {
+                content: "Viewport height is larger than 600px";
+                color: green;
+            }
+        }
+        @media (max-aspect-ratio: 8/5) {
+            .mq-aspect-ratio:after {
+                content: "Aspect Ratio is larger than 8/5";
+                color: green;
+            }
+        }
+    </style> 
+</head>
+<body>
+    <div class="mq-width">
+        <span >MQ Width:</span>
+    </div>
+    <div class="mq-height">
+        <span >MQ Height:</span>
+    </div>
+    <div class="mq-aspect-ratio">
+        <span >MQ Aspect Ratio:</span>
+    </div>
+</body>
+</html>

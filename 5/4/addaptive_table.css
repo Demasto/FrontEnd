@@ -1,0 +1,45 @@
+﻿body {
+    background: rgb(238,238,238);
+}
+table {
+    display: none;
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+td {
+    border: 1px solid rgb(163,163,163);
+    padding: 6px;
+}
+
+@media (min-width: 500px) {
+    #computer-table {
+        display: table;
+    }
+    thead td {
+        background: black;
+        color: white;
+    }
+    tbody tr:nth-child(odd) {
+        background: rgb(241,241,241);
+    }
+}
+@media (max-width: 499px) {
+    #mobile-table {
+        display: table;
+        margin: 1em auto;
+        max-width: 400px;
+        min-width: 250px;
+    }
+    thead td {
+        background: rgb(241,241,241);
+    }
+    p {
+        display: inline;
+        padding-left: 1em;
+    }
+    tr:nth-child(-n + 3) {
+        background: rgb(241,241,241);
+    }
+}

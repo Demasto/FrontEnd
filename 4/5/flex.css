@@ -1,0 +1,75 @@
+﻿body {
+    margin: 5em auto;
+    background: rgb(238,238,238);
+    width: 1024px;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 0.5em;
+    font-size: 2em;
+}
+
+.masonry {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    height: 2050px;
+    width: 1024px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    height: 2300px;
+    width: 1024px;
+    padding: 0;
+}
+
+.cards-layout {
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+    border: 2px solid gainsboro;
+    background: white;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.2em 0.1em darkgray;
+}
+
+.cards-layout img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    flex: 1 1 auto;
+}
+
+.cards-layout > p {
+    font-family: sans-serif;
+    padding: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+    flex: 1000 1 auto; /* Чтобы текст раздвигал свободное пространство */
+}
+
+.cards-layout > hr {
+    width: 100%;
+    border: 1px solid gainsboro;
+}
+
+.cards-layout .last  {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.cards-layout .last > p {
+    margin: 0;
+    padding: 1.5em;
+}
+
+.cards-layout > .last hr {
+    border: 1px solid gainsboro;
+    margin: 0;
+}

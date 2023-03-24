@@ -3,82 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Карточки</title>
-    <style>
-        body {
-            margin: 5em 10em;
-            background: rgb(238,238,238);
-        }
-        h2 {
-            margin: 0;
-            font-size: 2em;
-        }
-        .masonry {
-            display: flex;
-            flex-flow: column wrap;
-            height: 2000px;
-            width: 1080px
-        }
-        .flex {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: stretch;
-            height: 2160px;
-            width: 1080px
-        }
-        .cards-layout {
-           
-            display: flex;
-            flex-flow: row wrap;
-            
-           justify-content: stretch;
-            width: 300px;
-            border: 2px solid gainsboro;
-            background: white;
-            margin: 2em 2em 0 0;
-            border-radius: 10px;
-            box-shadow: 0.1em 0.1em 0.2em 0.1em darkgray;
-        }
-        .cards-layout img {
-            width: 100%;
-            border-radius: 10px 10px 0 0;
-
-
-        }
-
-        .cards-layout > p {
-            font-family: sans-serif;
-            padding: 1em 1.5em;
-            line-height: 1.5em;
-            margin: 0;
-            
-        }
-        .cards-layout > hr {
-            width: 100%;
-            border: 1px solid gainsboro;
-        }
-   
-        
-        .cards-layout .last  {
-            font-family: sans-serif;
-            line-height: 1.5em;
-            margin: 0;
-            align-self: flex-end;
-        }
-        .cards-layout .last > p {
-            padding: 0 1.5em;
-        }
-        .cards-layout > .last hr {
-            width: 100%;
-            border: 1px solid gainsboro;
-            align-self: flex-end;
-            margin: 0;
-        }
-        
-        
-    </style>
+    <link rel="stylesheet" href="flex.css">
 </head>
 <body>
     <h2>Layout Masonry</h2>
+    
     <div class="masonry">
         <div class="cards-layout">
             <img src="images/Image1.jpg" alt="1">
@@ -185,7 +114,9 @@
             </p>
         </div>
     </div>
+    
     <h2>Layout Flex</h2>
+    
     <div class="flex">
         <div class="cards-layout">
             <img src="images/Image1.jpg" alt="1">
@@ -194,7 +125,6 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima consequuntur
                 possimus quo enim eveniet, deserunt ducimus doloremque laudantium iure,
                 ut inventore eaque fugit ex porro totam perspiciatis molestiae corporis. Odio!
-                
             </p>
             <div class="last">
                 <hr > 
