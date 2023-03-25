@@ -6,28 +6,53 @@
     <title>Fill Dropdown</title>
     <script src="dropdown.js"></script>
     <link rel="stylesheet" href="filldropdown.css">
+    <link rel="stylesheet" href="../lead.css">
 </head>
 
 <body>
-    <h1>Dropdown Menu</h1>
-    <article>
- 
-        <div>
-            <select name ="dima "id="menu">
-                <option value="none" hidden>Заполните форму</option>
-            </select>
-        </div>
-        
-        <label  for="newItemText">Text:</label>
-        <input type="text" id="newItemText" />
-        
-        <label for="newItemValue">Value:</label>
-        <input type="text" id="newItemValue" />
-        
-        <input type="button" value="Add" onclick="addItem()">
-<!--        <input type="button" value="Delete" onclick="deleteItem()">-->
+    
+    <div class="container">
+        <div class="phone">
+            <div class="content">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../about.html">About</a></li>
+                            <li><a href="../../Html_CSS.html">Html/CSS</a></li>
+                            <li><a href="../../JS.html">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="back">
+                        <a onclick="history.back(); return false;">Назад</a>
+                    </div>
+                </nav>
+                <h1>Dropdown Menu</h1>
+                <article>
 
-    </article>
+                    <div>
+                        <select name ="dima "id="menu1">
+                            <option value="none" hidden>Заполните форму</option>
+                        </select>
+                    </div>
+
+                    <label  for="newItemText">Text:</label>
+                    <input type="text" id="newItemText" />
+
+                    <label for="newItemValue">Value:</label>
+                    <input type="text" id="newItemValue" />
+
+                    <input type="button" value="Add" onclick="addItem()">
+                    <!--        <input type="button" value="Delete" onclick="deleteItem()">-->
+
+                </article>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

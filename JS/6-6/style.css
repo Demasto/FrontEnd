@@ -1,32 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
 main {
-    width: 44%;
-    margin: 2rem auto;
+    width: 100%;
+    
     text-align: center;
     background: #f6f6f6;
-    padding: 1rem;
-    border-radius: 4px;
 }
 
-main label, main input {
+main label, main input[type="text"] {
     display: block;
 }
 
-main input {
+
+main input[type="text"], main input[type="button"] {
     text-align: center;
-    width: 50%;
-    margin: 1rem auto;
+    width: 150px;
+    margin: 0.5rem auto ;
+}
+input[type="button"] {
+    background: gray;
+    border: 2px solid gray;
+
+}
+main input[type="button"]:hover{
+    background-color: #9a9a9a;
+    border-color: #9a9a9a;
+}
+main input[type="button"]:active{
+    background: gray;
+    border-color: gray;
 }
 
 #daysBtn, #hoursBtn, #minutesBtn, #secondsBtn {
-    background: gray;
-    width: 18%;
-    border: 2px solid gray;
+    width: 150px;
     border-radius: 4px;
     padding: 4px 9px;
     text-transform: uppercase;

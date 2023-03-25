@@ -7,31 +7,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Time Converter</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="../lead.css">
+ 
 </head>
 
 <body onload="attachEventsListeners()">
     <main>
-        <h1>Time Converter</h1>
-        <div>
-            <label for="days">Days: </label>
-            <input type="text" id="days">
-            <input id="daysBtn" type="button" value="Convert">
+        <div class="container">
+            <div class="phone">
+                <div class="content">
+                    <nav role="navigation">
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                                <li><a href="../../index.html">Home</a></li>
+                                <li><a href="../../about.html">About</a></li>
+                                <li><a href="../../Html_CSS.html">Html/CSS</a></li>
+                                <li><a href="../../JS.html">JS</a></li>
+                            </ul>
+                        </div>
+                        <div id="back">
+                            <a onclick="history.back(); return false;">Назад</a>
+                        </div>
+                    </nav>
+                    <h1>Time Converter</h1>
+                    <div>
+                        <label for="days">Days: </label>
+                        <input type="text" id="days">
+                        <input id="daysBtn" type="button" value="Convert">
+                    </div>
+                    <div>
+                        <label for="hours">Hours: </label>
+                        <input type="text" id="hours">
+                        <input id="hoursBtn" type="button" value="Convert">
+                    </div>
+                    <div>
+                        <label for="minutes">Minutes: </label>
+                        <input type="text" id="minutes">
+                        <input id="minutesBtn" type="button" value="Convert">
+                    </div>
+                    <div>
+                        <label for="seconds">Seconds: </label>
+                        <input type="text" id="seconds">
+                        <input id="secondsBtn" type="button" value="Convert">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="hours">Hours: </label>
-            <input type="text" id="hours">
-            <input id="hoursBtn" type="button" value="Convert">
-        </div>
-        <div>
-            <label for="minutes">Minutes: </label>
-            <input type="text" id="minutes">
-            <input id="minutesBtn" type="button" value="Convert">
-        </div>
-        <div>
-            <label for="seconds">Seconds: </label>
-            <input type="text" id="seconds">
-            <input id="secondsBtn" type="button" value="Convert">
-        </div>
+        
     </main>
 </body>
 

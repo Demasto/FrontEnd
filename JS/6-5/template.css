@@ -57,11 +57,12 @@ h2 a {
     box-shadow: 0 2px 2px -2px #0E1119;
 }
 
-.container {
+.containerTwo {
     text-align: left;
     overflow: hidden;
     width: 80%;
-    margin: 0 auto;
+    margin: 1em auto;
+
     display: table;
     padding: 0 0 8em 0;
 }
@@ -150,4 +151,15 @@ h2 a {
     font-weight: bold;
     margin: 0 15px;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 12px;
+    }
+}
+@media (max-width: 460px) {
+    * {
+        font-size: 8px;
+    }
 }

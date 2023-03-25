@@ -5,15 +5,41 @@
     <meta charset="UTF-8">
     <title>Subtraction</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../lead.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div id="wrapper">
-        <input type="text" id="firstNumber" value="13.33" disabled>
-        <input type="text" id="secondNumber" value="22.18" disabled>
-
-        <div id="result"></div>
+    <div class="container">
+        <div class="phone">
+            <div class="content">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../about.html">About</a></li>
+                            <li><a href="../../Html_CSS.html">Html/CSS</a></li>
+                            <li><a href="../../JS.html">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="back">
+                        <a onclick="history.back(); return false;">Назад</a>
+                    </div>
+                </nav>
+                <div id="wrapper">
+                    <input type="text" id="firstNumber" value="13.33" disabled>
+                    <input type="text" id="secondNumber" value="22.18" disabled>
+    
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <script src="subtract.js"></script>
     <script>
         window.onload = function () {

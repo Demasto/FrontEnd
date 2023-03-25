@@ -2,57 +2,82 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../lead.css">
     <link rel="stylesheet" href="template.css">
     <title>TABLE - SEARCH ENGINE</title>
     <script src="solution.js"></script>
 </head>
 
 <body>
-    <table class="container">
-        <thead>
-            <tr>
-                <th>Student name</th>
-                <th>Student email</th>
-                <th>Student course</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td colspan="3">
-                    <input type="text" id="searchField" />
-                    <button type="button" id="searchBtn">Search</button>
-                </td>
-            </tr>
-        </tfoot>
-        <tbody id="table">
-            <tr>
-                <td>Ivanov Ivan</td>
-                <td>ivan@example.com</td>
-                <td>JS-CORE</td>
-            </tr>
-            <tr>
-                <td>Petr Petrov</td>
-                <td>petr@example.com</td>
-                <td>JS-WEB</td>
-            </tr>
-            <tr>
-                <td>Max Maxov</td>
-                <td>max@example.com</td>
-                <td>FRONT-END</td>
-            </tr>
-            <tr>
-                <td>Svetlana Svetlanova</td>
-                <td>sv@example.com</td>
-                <td>TECH-JS</td>
-            </tr>
-            <tr>
-                <td>Marina Marinova</td>
-                <td>m@example.com</td>
-                <td>All possible courses</td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="result"></div>
+    <div class="container">
+        <div class="phone">
+            <div class="content" style="background: rgb(31,39,57)">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../about.html">About</a></li>
+                            <li><a href="../../Html_CSS.html">Html/CSS</a></li>
+                            <li><a href="../../JS.html">JS</a></li>
+                        </ul>
+                    </div>
+                    <div id="back">
+                        <a onclick="history.back(); return false;">Назад</a>
+                    </div>
+                </nav>
+                <table class="containerTwo">
+                    <thead>
+                    <tr>
+                        <th>Student name</th>
+                        <th>Student email</th>
+                        <th>Student course</th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <input type="text" id="searchField" />
+                            <button type="button" id="searchBtn">Search</button>
+                        </td>
+                    </tr>
+                    </tfoot>
+                    <tbody id="table">
+                    <tr>
+                        <td>Ivanov Ivan</td>
+                        <td>ivan@example.com</td>
+                        <td>JS-CORE</td>
+                    </tr>
+                    <tr>
+                        <td>Petr Petrov</td>
+                        <td>petr@example.com</td>
+                        <td>JS-WEB</td>
+                    </tr>
+                    <tr>
+                        <td>Max Maxov</td>
+                        <td>max@example.com</td>
+                        <td>FRONT-END</td>
+                    </tr>
+                    <tr>
+                        <td>Svetlana Svetlanova</td>
+                        <td>sv@example.com</td>
+                        <td>TECH-JS</td>
+                    </tr>
+                    <tr>
+                        <td>Marina Marinova</td>
+                        <td>m@example.com</td>
+                        <td>All possible courses</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         solve();

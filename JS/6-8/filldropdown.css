@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 20px;
     font-family: 'Raleway', sans-serif;
@@ -18,7 +18,7 @@ article {
     padding: 10px 20px;
 }
 
-#menu {
+#menu1 {
     padding: 3px 7px;
     border-radius: 15px;
 }
