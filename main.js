@@ -1,5 +1,8 @@
-﻿document.body.addEventListener("click", function () {
-    document.body.querySelectorAll('details.dropdown[open]')
-        .forEach(e => e.open = false)
-}) 
-
+﻿function closeDetails(id) {
+    for (let i = 1; i <= 5; i++) {
+        if(i !== id){
+            document.getElementById(`${i}`).open = false;
+        }
+    }
+    
+}

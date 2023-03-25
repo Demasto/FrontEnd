@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="lead.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
     <title>Html/CSS</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
                 </nav>
                 <div class="filling">
                     <h1>Html/CSS</h1>
-                    <DETAILS>
+                    <DETAILS onclick="closeDetails(1)" id="1">
                         <summary>Лабораторная работа №1</summary>
                         <ol>
                             <li><a href="1/1.html">Простая строка</a></li>
@@ -37,7 +38,7 @@
                             <li><a href="1/6.html">Таблица</a></li>
                         </ol>
                     </DETAILS>
-                    <DETAILS>
+                    <DETAILS onclick="closeDetails(2)" id="2">
                         <summary>Лабораторная работа №2</summary>
                         <ol>
                             <li><a href="2/1.html">Введение в СSS</a></li>
@@ -46,7 +47,7 @@
                             <li><a href="2/4.html">Стилизованная статья</a></li>
                         </ol>
                     </DETAILS>
-                    <DETAILS>
+                    <DETAILS onclick="closeDetails(3)" id="3">
                         <summary>Лабораторная работа №3</summary>
                         <ol>
                             <li><a href="3/1.html">CSS BOX</a></li>
@@ -56,7 +57,7 @@
                             <li><a href="3/5.html">Галлерея</a></li>
                         </ol>
                     </DETAILS>
-                    <DETAILS>
+                    <DETAILS onclick="closeDetails(4)" id="4">
                         <summary>Лабораторная работа №4</summary>
                         <ol>
                             <li><a href="4/1/1.html">Гибкий макет</a></li>
@@ -66,7 +67,7 @@
                             <li><a href="4/5/5.html">Карточки</a></li>
                         </ol>
                     </DETAILS>
-                    <DETAILS class="last">
+                    <DETAILS class="last" onclick="closeDetails(5)" id="5">
                         <summary>Лабораторная работа №5</summary>
                         <ol class="last">
                             <li><a href="5/1/1.html">Введение в Media Queries</a></li>
