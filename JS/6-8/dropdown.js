@@ -5,7 +5,7 @@ function addItem() {
     let newItemValue = document.getElementById("newItemValue").value;
     let line = `${newItemText} ${newItemValue}`
     let lineHTML = `<option value=${newItemValue}>${line}</option>`
-    document.getElementById("menu").innerHTML += lineHTML;
+    document.getElementById("menu1").innerHTML += lineHTML;
    
     
    
