@@ -1,4 +1,5 @@
 ﻿body {
+    transition: background-color 1s;
     margin: 7em auto;
     width: min-content;
     height: 100vh;
@@ -8,6 +9,9 @@
     background: rgb(251,251,251);
     position: relative;
     box-shadow: 2px 2px 2px 0 darkgray;
+}
+.form * {
+    transition: font-size 50ms;
 }
 .form p {
     position: relative;
@@ -62,8 +66,13 @@
 }
 
 @media (min-width: 1501px) {
+
     body {
-        background: #4DC3FA;
+        transition: background-color 1s;
+        background-color: #4DC3FA;
+    }
+    .form * {
+        transition: font-size 50ms;
     }
     .form {
         border-radius: 6px;
@@ -86,13 +95,20 @@
     }
 }
 @media (max-width: 1500px) and (min-width: 701px) {
+    
     body {
+        transition: background-color 1s;
         background: #20ab51;
     }
+    .form * {
+        transition: font-size 50ms;
+    }
     .form {
+        
         border-radius: 4px;
     }
     .form p {
+        
         font-size: 16px;
         padding: 0.5em 0 0.5em 1em;
         bottom: 1em;
@@ -114,7 +130,11 @@
         display: block;
     }
     body {
+        transition: background-color 1s;
         background: red;
+    }
+    .form * {
+        transition: font-size 50ms;
     }
     .form {
         border-radius: 3px;

@@ -2,7 +2,9 @@
     background: rgb(238,238,238);
 }
 table {
-    display: none;
+    position: relative; 
+    margin: auto;
+    opacity: 0;
     width: 100%;
     background: white;
     border-collapse: collapse;
@@ -12,10 +14,12 @@ td {
     border: 1px solid rgb(163,163,163);
     padding: 6px;
 }
-
-@media (min-width: 500px) {
+@media (min-width: 421px) {
     #computer-table {
         display: table;
+        position: relative;
+        opacity: 100%;
+        transition: opacity 1s;
     }
     thead td {
         background: black;
@@ -25,11 +29,17 @@ td {
         background: rgb(241,241,241);
     }
 }
-@media (max-width: 499px) {
+@media (max-width: 420px) {
     #mobile-table {
         display: table;
+        top: 0;
+        opacity: 100%;
+        transition: opacity 1s;
+        position: absolute;
+        
         margin: 1em auto;
-        max-width: 400px;
+        max-width: 390px;
+        padding: 1em;
         min-width: 250px;
     }
     thead td {

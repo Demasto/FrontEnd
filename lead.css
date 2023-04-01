@@ -106,6 +106,8 @@
 
     #menuToggle input
     {
+        margin: 0;
+       
         display: flex;
         
         width: 40px;
